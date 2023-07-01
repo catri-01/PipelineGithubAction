@@ -54,8 +54,3 @@ jobs:
       uses: sonarsource/sonarcloud-github-action@master
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
-        
-    - name: Build Package
-      env:
-        CI: false
-      run: npm run build
